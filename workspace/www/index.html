@@ -534,8 +534,8 @@
                         <i id="audioIconWhite" class="icon-headphones icon-white" style="width: 0px; margin-left:-4px" ></i>
                         Audio/Video
                     </div>
-                    <div class="subcontent" id="audioContent">
-                      <div class="row-fluid" >
+                    <div class="subcontent" id="audioContent" style="text-align: center; ">
+                      <div class="row-fluid" style="margin-top:10px; margin-bottom:10px; " >
                         <div class="hidden-phone" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; margin-bottom:5px ">
                             <iframe class="hidden-phone" src="https://youtube.com/embed/UaMYLNyVSRY" frameborder="1" allowfullscreen></iframe>
                         </div>
@@ -645,117 +645,121 @@
 
         function hoverColorOn(subheaderID) {
 
-            var subheader = document.getElementById(subheaderID);
-            subheader.style.color = '#FDFDFD';
+            if ($(window).width() >= 980){
+                var subheader = document.getElementById(subheaderID);
+                subheader.style.color = '#FDFDFD';
 
-            switch (subheaderID) {
-                case 'showsSubheader':
-                    var showsIcon = document.getElementById('showsIcon');
-                    var showsIconWhite = document.getElementById('showsIconWhite');
+                switch (subheaderID) {
+                    case 'showsSubheader':
+                        var showsIcon = document.getElementById('showsIcon');
+                        var showsIconWhite = document.getElementById('showsIconWhite');
 
-                    showsIcon.style.width = '0px';
-                    showsIconWhite.style.width = '15px';
-                    break;
-                case 'facebookSubheader':
-                    var fbIcon = document.getElementById('fbIcon');
-                    var fbIconWhite = document.getElementById('fbIconWhite');
+                        showsIcon.style.width = '0px';
+                        showsIconWhite.style.width = '15px';
+                        break;
+                    case 'facebookSubheader':
+                        var fbIcon = document.getElementById('fbIcon');
+                        var fbIconWhite = document.getElementById('fbIconWhite');
 
-                    fbIcon.style.width = '0px';
-                    fbIconWhite.style.width = '15px';
-                    break;
-                case 'membersSubheader':
-                    var membersIcon = document.getElementById('membersIcon');
-                    var membersIconWhite = document.getElementById('membersIconWhite');
+                        fbIcon.style.width = '0px';
+                        fbIconWhite.style.width = '15px';
+                        break;
+                    case 'membersSubheader':
+                        var membersIcon = document.getElementById('membersIcon');
+                        var membersIconWhite = document.getElementById('membersIconWhite');
 
-                    membersIcon.style.width = '0px';
-                    membersIconWhite.style.width = '15px';
-                    break;
-                case 'bioSubheader':
-                    var bioIcon = document.getElementById('bioIcon');
-                    var bioIconWhite = document.getElementById('bioIconWhite');
+                        membersIcon.style.width = '0px';
+                        membersIconWhite.style.width = '15px';
+                        break;
+                    case 'bioSubheader':
+                        var bioIcon = document.getElementById('bioIcon');
+                        var bioIconWhite = document.getElementById('bioIconWhite');
 
-                    bioIcon.style.width = '0px';
-                    bioIconWhite.style.width = '15px';
-                    break;
-                case 'privateSubheader':
-                    var privateIcon = document.getElementById('privateIcon');
-                    var privateIconWhite = document.getElementById('privateIconWhite');
+                        bioIcon.style.width = '0px';
+                        bioIconWhite.style.width = '15px';
+                        break;
+                    case 'privateSubheader':
+                        var privateIcon = document.getElementById('privateIcon');
+                        var privateIconWhite = document.getElementById('privateIconWhite');
 
-                    privateIcon.style.width = '0px';
-                    privateIconWhite.style.width = '15px';
-                    break;
-                case 'audioSubheader':
-                    var audioIcon = document.getElementById('audioIcon');
-                    var audioIconWhite = document.getElementById('audioIconWhite');
+                        privateIcon.style.width = '0px';
+                        privateIconWhite.style.width = '15px';
+                        break;
+                    case 'audioSubheader':
+                        var audioIcon = document.getElementById('audioIcon');
+                        var audioIconWhite = document.getElementById('audioIconWhite');
 
-                    audioIcon.style.width = '0px';
-                    audioIconWhite.style.width = '15px';
-                    break;
-                case 'contactSubheader':
-                    var contactIcon = document.getElementById('contactIcon');
-                    var contactIconWhite = document.getElementById('contactIconWhite');
+                        audioIcon.style.width = '0px';
+                        audioIconWhite.style.width = '15px';
+                        break;
+                    case 'contactSubheader':
+                        var contactIcon = document.getElementById('contactIcon');
+                        var contactIconWhite = document.getElementById('contactIconWhite');
 
-                    contactIcon.style.width = '0px';
-                    contactIconWhite.style.width = '15px';
-                    break;
+                        contactIcon.style.width = '0px';
+                        contactIconWhite.style.width = '15px';
+                        break;
+                }
             }
         }
 
         function hoverColorOff(subheaderID) {
 
-            var subheader = document.getElementById(subheaderID);
-            subheader.style.color = '#202020';
+            if ($(window).width() >= 980){
+                var subheader = document.getElementById(subheaderID);
+                subheader.style.color = '#202020';
 
-            switch (subheaderID) {
-                case 'showsSubheader':
-                    var showsIcon = document.getElementById('showsIcon');
-                    var showsIconWhite = document.getElementById('showsIconWhite');
+                switch (subheaderID) {
+                    case 'showsSubheader':
+                        var showsIcon = document.getElementById('showsIcon');
+                        var showsIconWhite = document.getElementById('showsIconWhite');
 
-                    showsIcon.style.width = '15px';
-                    showsIconWhite.style.width = '0px';
-                    break;
-                case 'facebookSubheader':
-                    var fbIcon = document.getElementById('fbIcon');
-                    var fbIconWhite = document.getElementById('fbIconWhite');
+                        showsIcon.style.width = '15px';
+                        showsIconWhite.style.width = '0px';
+                        break;
+                    case 'facebookSubheader':
+                        var fbIcon = document.getElementById('fbIcon');
+                        var fbIconWhite = document.getElementById('fbIconWhite');
 
-                    fbIcon.style.width = '15px';
-                    fbIconWhite.style.width = '0px';
-                    break;
-                case 'membersSubheader':
-                    var membersIcon = document.getElementById('membersIcon');
-                    var membersIconWhite = document.getElementById('membersIconWhite');
+                        fbIcon.style.width = '15px';
+                        fbIconWhite.style.width = '0px';
+                        break;
+                    case 'membersSubheader':
+                        var membersIcon = document.getElementById('membersIcon');
+                        var membersIconWhite = document.getElementById('membersIconWhite');
 
-                    membersIcon.style.width = '15px';
-                    membersIconWhite.style.width = '0px';
-                    break;
-                case 'bioSubheader':
-                    var bioIcon = document.getElementById('bioIcon');
-                    var bioIconWhite = document.getElementById('bioIconWhite');
+                        membersIcon.style.width = '15px';
+                        membersIconWhite.style.width = '0px';
+                        break;
+                    case 'bioSubheader':
+                        var bioIcon = document.getElementById('bioIcon');
+                        var bioIconWhite = document.getElementById('bioIconWhite');
 
-                    bioIcon.style.width = '15px';
-                    bioIconWhite.style.width = '0px';
-                    break;
-                case 'privateSubheader':
-                    var privateIcon = document.getElementById('privateIcon');
-                    var privateIconWhite = document.getElementById('privateIconWhite');
+                        bioIcon.style.width = '15px';
+                        bioIconWhite.style.width = '0px';
+                        break;
+                    case 'privateSubheader':
+                        var privateIcon = document.getElementById('privateIcon');
+                        var privateIconWhite = document.getElementById('privateIconWhite');
 
-                    privateIcon.style.width = '15px';
-                    privateIconWhite.style.width = '0px';
-                    break;
-                case 'audioSubheader':
-                    var audioIcon = document.getElementById('audioIcon');
-                    var audioIconWhite = document.getElementById('audioIconWhite');
+                        privateIcon.style.width = '15px';
+                        privateIconWhite.style.width = '0px';
+                        break;
+                    case 'audioSubheader':
+                        var audioIcon = document.getElementById('audioIcon');
+                        var audioIconWhite = document.getElementById('audioIconWhite');
 
-                    audioIcon.style.width = '15px';
-                    audioIconWhite.style.width = '0px';
-                    break;
-                case 'contactSubheader':
-                    var contactIcon = document.getElementById('contactIcon');
-                    var contactIconWhite = document.getElementById('contactIconWhite');
+                        audioIcon.style.width = '15px';
+                        audioIconWhite.style.width = '0px';
+                        break;
+                    case 'contactSubheader':
+                        var contactIcon = document.getElementById('contactIcon');
+                        var contactIconWhite = document.getElementById('contactIconWhite');
 
-                    contactIcon.style.width = '15px';
-                    contactIconWhite.style.width = '0px';
-                    break;
+                        contactIcon.style.width = '15px';
+                        contactIconWhite.style.width = '0px';
+                        break;
+                }
             }
         }
 
@@ -810,12 +814,6 @@
                     break;
             }
             memberPic.style.visibility = 'visible';
-        }
-
-        function hideMember() {
-
-//            var memberPic = document.getElementById('memberPic');
-//            memberPic.style.visibility = 'collapse';
         }
     </script>
 

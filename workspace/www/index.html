@@ -123,7 +123,12 @@
             cursor: pointer;
             font-weight: bold;
         }
-        /*[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        /*[class="img-social"] {
+            height: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
             display: none;
         }*/
     </style>
@@ -132,17 +137,19 @@
 <body style="background:#101010; background-image:url('images/bg9.png'); background-repeat:no-repeat; background-attachment:fixed; ">
     <div id="fb-root"></div>
     <div style="display: none; position: absolute; z-index: 110; left: 400; top: 100; width: 15; height: 15" id="preview_div"></div>
+    <img src="images/Facebook-icon.png" style="height: 0px" />
+    <img src="images/Instagram-icon.png" style="height: 0px" />
     
     <div class="container-fluid">
         <!--row: HEADER, CAROUSEL-->
-        <div class="row-fluid" style="margin-top:30px" >
+        <div class="row-fluid" style="margin-top:10px" >
             <div class="span3" style="background-color: transparent; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
                 <div class="hidden-tablet hidden-phone hidden-desktop" style="margin-top: 170px; margin-right:-20px;">
                     <span class="header" style="margin-left: -6px; margin-right:2px; margin-top: 10px;">SHUT</span>
                     <span class="header" style="color:white; margin-left:-6px; margin-top:10px; ">DOWN</span>
                     <span class="header" style="margin-left: -6px; margin-top: 10px;">BROWN</span>
                 </div>
-                <div style="margin-top: 30px;">
+                <div style="margin-top: 20px;">
                     <span class="header" style="margin-left: -4px; margin-right:2px; margin-top: 10px;">SHUT</span><br />
                     <span class="header" style="color:white; margin-left:-4px; margin-top:10px; ">DOWN</span><br />
                     <span class="header" style="margin-left: -4px; margin-top: 10px;">BROWN</span><br />
@@ -151,8 +158,18 @@
                     #bigtimegoodtime
                 </div>
             </div>
-            <div class="span6 offset3" style="background-color: transparent; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
-                <div id="slidingcarousel" class="carousel slide hidden-phone hidden-tablet" >
+            <div class="span3" style="background-color: transparent; margin-top: 10px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; ">
+                <div style="text-align: right; margin-top: 8px">
+                    <a href="http://facebook.com/shutdownbrownmaine"><img id="fbIcon" class="img-polaroid hidden-phone" style="height: 64px; margin:5px; margin-right: 2px " src="images/Facebook-icon2.png" onmouseover="hoverIconOn('fbIcon');" onmouseout="hoverIconOff('fbIcon');" /></a><br />
+                    <a href="http://instagram.com/shutdownbrown"><img id="instaIcon" class="img-polaroid hidden-phone" style="height: 64px; margin:5px; margin-right: 2px " src="images/Instagram-icon2.png" onmouseover="hoverIconOn('instaIcon');" onmouseout="hoverIconOff('instaIcon');" /></a>
+                </div>
+                <div style="text-align: left; margin-top: -30px">
+                    <a href="fb://profile/162989673844995"><img class="img-polaroid hidden-tablet hidden-desktop" style="height: 64px; margin:5px; margin-left: 0px " src="images/Facebook-icon2.png" /></a>
+                    <a href="instagram://user?username=shutdownbrown"><img class="img-polaroid hidden-tablet hidden-desktop" style="height: 64px; margin:5px; " src="images/Instagram-icon2.png" /></a>
+                </div>
+            </div>
+            <div class="span6" style="background-color: transparent; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+                <div id="slidingcarousel" class="carousel slide hidden-phone hidden-tablet" style="margin-top: 0px; margin-bottom: 0px" >
                     <div class="carousel-inner">
                         <div class="active item">
                             <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
@@ -186,11 +203,6 @@
                         </div>
                         <div class="item">
                             <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/7.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
                                 <img src="images/8.jpg" class="carouselImage img-polaroid" />
                             </p>
                         </div>
@@ -207,11 +219,6 @@
                         <div class="item">
                             <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
                                 <img src="images/11.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/12.jpg" class="carouselImage img-polaroid" />
                             </p>
                         </div>
                         <div class="item">
@@ -266,11 +273,6 @@
                         </div>
                         <div class="item">
                             <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/23.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
                                 <img src="images/24.jpg" class="carouselImage img-polaroid" />
                             </p>
                         </div>
@@ -296,27 +298,12 @@
                         </div>
                         <div class="item">
                             <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/29.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/30.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
                                 <img src="images/31.jpg" class="carouselImage img-polaroid" />
                             </p>
                         </div>
                         <div class="item">
                             <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
                                 <img src="images/32.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/33.jpg" class="carouselImage img-polaroid" />
                             </p>
                         </div>
                         <div class="item">
@@ -366,17 +353,7 @@
                         </div>
                         <div class="item">
                             <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/43.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
                                 <img src="images/44.jpg" class="carouselImage img-polaroid" />
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p style="-webkit-margin-before: 0px; -webkit-margin-after: 0px; ">
-                                <img src="images/45.jpg" class="carouselImage img-polaroid" />
                             </p>
                         </div>
                         <div class="item">
@@ -408,27 +385,33 @@
                 </div>
             </div>
             <div class="span6" style="background: transparent; padding-left: 0px; padding-top: 0px;">
-                <!--FACEBOOK-->
+                <!--SOCIAL
                 <div class="cell" id="facebookCell" style="height: 100%" >
                     <div class="subheader" id="facebookSubheader" onmouseover="hoverColorOn('facebookSubheader');" onmouseout="hoverColorOff('facebookSubheader');" onclick="toggleSectionVisibility('facebookCell', 'facebookContent', 'facebookSubheader');" >
                         <div>
                             <i id="fbIcon" class="icon-thumbs-up"></i>
                             <i id="fbIconWhite" class="icon-thumbs-up icon-white" style="width: 0px; margin-left:-4px" ></i>
-                            Facebook
+                            Social
                         </div>
                     </div>
                     <div class="subcontent" id="facebookContent" style="height: 100%; visibility:visible; text-align:center" >
-                        <div class="fb-like-box" style="height:80px; width:100%; margin-top:10px;" data-href="https://www.facebook.com/shutdownbrownmaine" data-width="250" data-height="200" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                        <a href="http://facebook.com/shutdownbrownmaine"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Facebook-icon2.png" /></a>
+                        <a href="http://instagram.com/shutdownbrown"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Instagram-icon2.png" /></a>
                     </div>
-                </div>
+                </div>-->
+                        <!--<a href="">
+                            <img src="" />
+                        </a>-->
+                        <!--<div class="fb-like-box" style="height:80px; width:100%; margin-top:10px;" data-href="https://www.facebook.com/shutdownbrownmaine" data-width="250" data-height="200" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                        <iframe src="http://snapwidget.com/sl/?u=c2h1dGRvd25icm93bnxpbnwxMDB8M3wzfDIwMjAyMHx5ZXN8MTB8bm9uZXxvblN0YXJ0fHllcw==&v=30714" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:120px; height:120px"></iframe>-->
                 <!--MEMBERS-->
-                <div class="cell" id="membersCell" style="height: 24px" >
+                <div class="cell" id="membersCell" style="height: 100%" >
                     <div class="subheader" id="membersSubheader" onclick="toggleSectionVisibility('membersCell', 'membersContent', 'membersSubheader');" onmouseover="hoverColorOn('membersSubheader');" onmouseout="hoverColorOff('membersSubheader');" >
                         <i id="membersIcon" class="icon-user"></i>
                         <i id="membersIconWhite" class="icon-user icon-white" style="width: 0px; margin-left:-4px" ></i>
                         Band Members
                     </div>
-                    <div class="subcontent" id="membersContent" style="text-align:center" >
+                    <div class="subcontent" id="membersContent" style="height: 100%; visibility:visible; text-align:center" >
                         <table style="margin: 0 auto; " ><!-- border="1px solid white"  -->
                             <tr style="height: 50px;" >
                               <td></td>
@@ -436,7 +419,7 @@
                               <td></td>
                               <td rowspan="9" style="width:240; text-align: center" class="hidden-phone hidden-tablet" >
                                 <div style="width: 260px;">
-                                    <img id="memberPic" class="img-polaroid" style="vertical-align: middle; height: 224px;" src="images/dial2.jpg" />
+                                    <img id="memberPic" class="img-polaroid" style="vertical-align: middle; height: 224px;" src="images/empire.jpg" />
                                 </div>
                               </td>
                             </tr>
@@ -536,7 +519,7 @@
                     </div>
                     <div class="subcontent" id="audioContent" style="text-align: center; ">
                       <div class="row-fluid" style="margin-top:10px; margin-bottom:10px; " >
-                        <div class="hidden-phone" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; margin-bottom:5px ">
+                        <!--<div class="hidden-phone" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; margin-bottom:5px ">
                             <iframe class="hidden-phone" src="https://youtube.com/embed/UaMYLNyVSRY" frameborder="1" allowfullscreen></iframe>
                         </div>
                         <div class="hidden-desktop hidden-tablet" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; margin-bottom:5px ">
@@ -547,29 +530,29 @@
                         </div>
                         <div class="hidden-desktop hidden-tablet" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; ">
                             <iframe class="hidden-desktop hidden-tablet" style="width:200px;" src="https://player.vimeo.com/video/50573476" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                          <!--<div id="AVslidingcarousel" class="carousel slide " >
+                        </div>-->
+                          <div id="AVslidingcarousel" class="carousel slide " style="margin-bottom: -5px">
                               <div class="carousel-inner">
                                   <div class="active item">
                                       <div class="hidden-phone" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; margin-bottom:5px ">
-                                          <iframe src="https://youtube.com/embed/UaMYLNyVSRY" frameborder="1" allowfullscreen></iframe>
+                                          <iframe style="width:350px; height:200px; " src="https://youtube.com/embed/UaMYLNyVSRY" frameborder="1" allowfullscreen></iframe>
                                       </div>
                                       <div class="hidden-desktop hidden-tablet" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; margin-bottom:5px ">
-                                          <iframe style="width:200px;" src="https://youtube.com/embed/UaMYLNyVSRY" frameborder="1" allowfullscreen></iframe>
+                                          <iframe style="width:200px; height:120px; " src="https://youtube.com/embed/UaMYLNyVSRY" frameborder="1" allowfullscreen></iframe>
                                       </div>
                                   </div>
                                   <div class="item">
                                       <div class="hidden-phone" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; ">
-                                          <iframe src="https://player.vimeo.com/video/50573476" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                          <iframe style="width:350px; height:205px; " src="https://player.vimeo.com/video/50573476" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                       </div>
                                       <div class="hidden-desktop hidden-tablet" style="background: #202020; color: #D0D0D0; font-weight: normal; text-align: center; ">
-                                          <iframe style="width:200px;" src="https://player.vimeo.com/video/50573476" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                          <iframe style="width:200px; height:125px; " src="https://player.vimeo.com/video/50573476" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                       </div>
                                   </div>
-                                  <a class="carousel-control left" href="#AVslidingcarousel" data-slide="prev" style="margin-top:3px;">‹</a>
-                                  <a class="carousel-control right" href="#AVslidingcarousel" data-slide="next" style="margin-top:3px;">›</a>
                               </div>
-                          </div>-->
+                              <a class="carousel-control left" href="#AVslidingcarousel" data-slide="prev" style="margin-top:3px;">‹</a>
+                              <a class="carousel-control right" href="#AVslidingcarousel" data-slide="next" style="margin-top:3px;">›</a>
+                          </div>
                       </div>
                     </div>
                 </div>
@@ -758,6 +741,38 @@
 
                         contactIcon.style.width = '15px';
                         contactIconWhite.style.width = '0px';
+                        break;
+                }
+            }
+        }
+
+        function hoverIconOn(iconID) {
+
+            if ($(window).width() >= 980){
+                var icon = document.getElementById(iconID);
+
+                switch (iconID) {
+                    case 'fbIcon':
+                        icon.src = 'images/Facebook-icon.png';
+                        break;
+                    case 'instaIcon':
+                        icon.src = 'images/Instagram-icon.png';
+                        break;
+                }
+            }
+        }
+
+        function hoverIconOff(iconID) {
+
+            if ($(window).width() >= 980){
+                var icon = document.getElementById(iconID);
+
+                switch (iconID) {
+                    case 'fbIcon':
+                        icon.src = 'images/Facebook-icon2.png';
+                        break;
+                    case 'instaIcon':
+                        icon.src = 'images/Instagram-icon2.png';
                         break;
                 }
             }

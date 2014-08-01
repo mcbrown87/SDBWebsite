@@ -35,9 +35,9 @@
             padding-bottom: 1px;
         }
         [class="header"] {
-            margin-left:-4px;
-            margin-top:10px;
+            margin-left: 0px;
             margin-right: 0px;
+            margin-top: 3px;
             color: darkgray;
             font-family: SimHei;
             font-weight: bold;
@@ -75,7 +75,7 @@
             margin-top:1px;
             margin-left: -3px;
             margin-right: 0px;
-            margin-bottom: 10px;
+            margin-bottom: 50px;
             color: #f0f0f0;
             font-family: 'Bell MT';
             font-style:italic;
@@ -143,54 +143,39 @@
     <div class="container-fluid">
         <!--row: HEADER, CAROUSEL-->
         <div class="row-fluid" style="margin-top:5px" >
-            <div class="span6" style="text-align:left; background-color: transparent; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;" >
-                <table style="margin: 0 auto; " align="left" ><!-- border="1px solid white"  -->
-                    <tr>
-                        <td>
-                            <div class="hidden-phone" style="width:90px;">
-                                <a href="http://facebook.com/shutdownbrownmaine"><img id="fbIcon" class="img-polaroid" style="height: 70px; width: 70px; margin:5px; margin-right: 2px " src="images/Facebook-icon2.png" onmouseover="hoverIconOn('fbIcon');" onmouseout="hoverIconOff('fbIcon');" /></a><br />
-                                <a href="http://instagram.com/shutdownbrown"><img id="instaIcon" class="img-polaroid" style="height: 70px; width: 70px; margin:5px; margin-right: 2px " src="images/Instagram-icon2.png" onmouseover="hoverIconOn('instaIcon');" onmouseout="hoverIconOff('instaIcon');" /></a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="hidden-phone" style="width:200px; margin-left: 20px; margin-top: 10px; ">
-                                <div style="text-align: left; ">
-                                    <span class="header" >SHUT</span><br />
-                                    <span class="header" style="color:white;">DOWN</span><br />
-                                    <span class="header" >BROWN</span>
-                                </div>
-                                <div class="hash">
-                                    #bigtimegoodtime
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="hidden-tablet hidden-desktop">
-                                <div style="margin-top: 0px;">
-                                    <span class="header" >SHUT</span><br />
-                                    <span class="header" style="color:white;">DOWN</span><br />
-                                    <span class="header" >BROWN</span><br />
-                                </div>
-                                <div class="hash">
-                                    #bigtimegoodtime
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="hidden-tablet hidden-desktop" style="text-align: left;">
-                                <a href="fb://profile/162989673844995"><img class="img-polaroid" style="height: 64px; margin:5px; margin-left: 0px " src="images/Facebook-icon2.png" /></a>
-                                <a href="instagram://user?username=shutdownbrown"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Instagram-icon2.png" /></a>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+            <div class="span1 hidden-phone" style="background-color: transparent; width:90px; margin-left:0px; margin-right:10px margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; ">
+                <div style="text-align: left; margin-top: 8px">
+                    <a href="http://facebook.com/shutdownbrownmaine"><img id="fbIcon" class="img-polaroid" style="height: 70px; width: 70px; margin:5px; margin-right: 2px " src="images/Facebook-icon2.png" onmouseover="hoverIconOn('fbIcon');" onmouseout="hoverIconOff('fbIcon');" /></a><br />
+                    <a href="http://instagram.com/shutdownbrown"><img id="instaIcon" class="img-polaroid" style="height: 70px; width: 70px; margin:5px; margin-right: 2px " src="images/Instagram-icon2.png" onmouseover="hoverIconOn('instaIcon');" onmouseout="hoverIconOff('instaIcon');" /></a>
+                </div>
             </div>
-            
-            <div class="span6 hidden-phone hidden-tablet" style="height: 245px; text-align:right; background-color: transparent; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+            <div class="span1 hidden-phone" style="background-color: transparent; width:200px; margin-left: 20px; margin-top: 6px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+                <div style="margin-top: 18px; text-align: left; ">
+                    <span class="header" style="margin-left: -4px; margin-right:2px; margin-top: 10px;">SHUT</span><br />
+                    <span class="header" style="color:white; margin-left:-4px; margin-top:10px; ">DOWN</span><br />
+                    <span class="header" style="margin-left: -4px; margin-top: 10px;">BROWN</span><br />
+                </div>
+                <div class="hash">
+                    #bigtimegoodtime
+                </div>
+            </div>
+            <div class="span1 hidden-tablet hidden-desktop" style="background-color: transparent; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+                <div style="margin-top: 0px;">
+                    <span class="header" style="margin-left: -4px; margin-right:2px; margin-top: 10px;">SHUT</span><br />
+                    <span class="header" style="color:white; margin-left:-4px; margin-top:10px; ">DOWN</span><br />
+                    <span class="header" style="margin-left: -4px; margin-top: 10px;">BROWN</span><br />
+                </div>
+                <div class="hash">
+                    #bigtimegoodtime
+                </div>
+            </div>
+            <div class="span1 hidden-tablet hidden-desktop" style="background-color: transparent; margin-top: 5px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; ">
+                <div style="text-align: left; margin-top: -30px">
+                    <a href="fb://profile/162989673844995"><img class="img-polaroid" style="height: 64px; margin:5px; margin-left: 0px " src="images/Facebook-icon2.png" /></a>
+                    <a href="instagram://user?username=shutdownbrown"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Instagram-icon2.png" /></a>
+                </div>
+            </div>
+            <div class="span7 hidden-phone hidden-tablet" style="text-align:right; background-color: transparent; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
                 <div id="slidingcarousel" class="carousel slide" style="margin-top: 0px; margin-bottom: 0px" >
                     <div class="carousel-inner">
                         <div class="active item">
@@ -406,6 +391,25 @@
                 </div>
             </div>
             <div class="span6" style="background: transparent; padding-left: 0px; padding-top: 0px;">
+                <!--SOCIAL
+                <div class="cell" id="facebookCell" style="height: 100%" >
+                    <div class="subheader" id="facebookSubheader" onmouseover="hoverColorOn('facebookSubheader');" onmouseout="hoverColorOff('facebookSubheader');" onclick="toggleSectionVisibility('facebookCell', 'facebookContent', 'facebookSubheader');" >
+                        <div>
+                            <i id="fbIcon" class="icon-thumbs-up"></i>
+                            <i id="fbIconWhite" class="icon-thumbs-up icon-white" style="width: 0px; margin-left:-4px" ></i>
+                            Social
+                        </div>
+                    </div>
+                    <div class="subcontent" id="facebookContent" style="height: 100%; visibility:visible; text-align:center" >
+                        <a href="http://facebook.com/shutdownbrownmaine"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Facebook-icon2.png" /></a>
+                        <a href="http://instagram.com/shutdownbrown"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Instagram-icon2.png" /></a>
+                    </div>
+                </div>-->
+                        <!--<a href="">
+                            <img src="" />
+                        </a>-->
+                        <!--<div class="fb-like-box" style="height:80px; width:100%; margin-top:10px;" data-href="https://www.facebook.com/shutdownbrownmaine" data-width="250" data-height="200" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                        <iframe src="http://snapwidget.com/sl/?u=c2h1dGRvd25icm93bnxpbnwxMDB8M3wzfDIwMjAyMHx5ZXN8MTB8bm9uZXxvblN0YXJ0fHllcw==&v=30714" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:120px; height:120px"></iframe>-->
                 <!--MEMBERS-->
                 <div class="cell" id="membersCell" style="height: 100%" >
                     <div class="subheader" id="membersSubheader" onclick="toggleSectionVisibility('membersCell', 'membersContent', 'membersSubheader');" onmouseover="hoverColorOn('membersSubheader');" onmouseout="hoverColorOff('membersSubheader');" >
@@ -838,24 +842,3 @@
 
 </body>
 </html>
-
-
-                <!--SOCIAL
-                <div class="cell" id="facebookCell" style="height: 100%" >
-                    <div class="subheader" id="facebookSubheader" onmouseover="hoverColorOn('facebookSubheader');" onmouseout="hoverColorOff('facebookSubheader');" onclick="toggleSectionVisibility('facebookCell', 'facebookContent', 'facebookSubheader');" >
-                        <div>
-                            <i id="fbIcon" class="icon-thumbs-up"></i>
-                            <i id="fbIconWhite" class="icon-thumbs-up icon-white" style="width: 0px; margin-left:-4px" ></i>
-                            Social
-                        </div>
-                    </div>
-                    <div class="subcontent" id="facebookContent" style="height: 100%; visibility:visible; text-align:center" >
-                        <a href="http://facebook.com/shutdownbrownmaine"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Facebook-icon2.png" /></a>
-                        <a href="http://instagram.com/shutdownbrown"><img class="img-polaroid" style="height: 64px; margin:5px; " src="images/Instagram-icon2.png" /></a>
-                    </div>
-                </div>-->
-                        <!--<a href="">
-                            <img src="" />
-                        </a>-->
-                        <!--<div class="fb-like-box" style="height:80px; width:100%; margin-top:10px;" data-href="https://www.facebook.com/shutdownbrownmaine" data-width="250" data-height="200" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-                        <iframe src="http://snapwidget.com/sl/?u=c2h1dGRvd25icm93bnxpbnwxMDB8M3wzfDIwMjAyMHx5ZXN8MTB8bm9uZXxvblN0YXJ0fHllcw==&v=30714" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:120px; height:120px"></iframe>-->

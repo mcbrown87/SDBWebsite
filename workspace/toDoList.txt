@@ -1,0 +1,3 @@
+- change facebook to social, add instagram shit
+
+- get on that angular steez, make directives and shit

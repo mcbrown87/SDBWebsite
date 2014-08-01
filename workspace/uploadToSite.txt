@@ -1,0 +1,6 @@
+# cd workspace/www
+# sftp sdbrownu@ftp.shutdownbrown.us:public.html/
+pw:'b1g TIME g00d TIME'
+
+***sftp commands***
+# put -P [filename] [filename]
